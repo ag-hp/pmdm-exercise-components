@@ -52,11 +52,15 @@
 
 ---
 
-<p align="right">
-    <a href="https://github.com/ag-hp/dam.git"><img src="https://img.shields.io/badge/Organizador_y_Recursos_DAM-238636?style=for-the-badge&logo=github&logoColor=white" alt="Organizador y Recursos DAM"></a>
-</p>
-
+<h2>Recursos</h2>
 
 <p align="center">
     <a href="https://fonts.google.com/icons"><img src="https://img.shields.io/badge/Google_Fonts_Icons-4285F4?style=for-the-badge&logo=googlefonts&logoColor=white" alt="Google Fonts Icons"></a>
+</p>
+
+--- 
+
+
+<p align="right">
+    <a href="https://github.com/ag-hp/dam.git"><img src="https://img.shields.io/badge/Organizador_y_Recursos_DAM-238636?style=for-the-badge&logo=github&logoColor=white" alt="Organizador y Recursos DAM"></a>
 </p>
