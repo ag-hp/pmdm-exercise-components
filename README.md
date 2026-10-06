@@ -1,5 +1,5 @@
 <p align="center">
-  
+  <img width="1172" height="230" alt="android (online-video-cutter com)" src="https://github.com/user-attachments/assets/caed2132-0413-4ebb-8ff9-1bd4f87b4e73" />
 </p>
 
 <h1 align="center">PROGRAMACIÓN MULTIMEDIA Y DISPOSITIVOS MÓVILES</h1>
