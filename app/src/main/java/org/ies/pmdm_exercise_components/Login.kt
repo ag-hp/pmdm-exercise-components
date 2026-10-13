@@ -19,6 +19,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material.icons.filled.Person
+import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -49,6 +50,7 @@ fun LoginContent() {
     Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
         Column(
             verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
                 .padding(innerPadding)
                 .fillMaxSize()
@@ -91,8 +93,38 @@ fun LoginContent() {
                     }
                 }
             )
-        }
+            Spacer(modifier = Modifier.height(5.dp))
+            Row(
+                horizontalArrangement = Arrangement.Center,
+                modifier = Modifier.fillMaxWidth()
 
+            ) {
+                // Boton 1
+                Button(onClick = {}) {
+                    Spacer(modifier = Modifier.height(10.dp))
+                    Text("Aceptar")
+                }
+
+                // Boton 2
+                Spacer(modifier = Modifier.height(10.dp))
+                Button(onClick = {}) {
+                    Spacer(modifier = Modifier.height(15.dp))
+                    Text("Registarme")
+                }
+            }
+            // Boton 3
+            Spacer(modifier = Modifier.height(5.dp))
+            Row(
+                horizontalArrangement = Arrangement.Center,
+                modifier = Modifier.fillMaxWidth()
+
+            ) {
+                Button(onClick = {}) {
+                    Spacer(modifier = Modifier.height(10.dp))
+                    Text("Cancelar")
+                }
+            }
+        }
     }
 }
 
