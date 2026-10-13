@@ -49,16 +49,17 @@ class Register : ComponentActivity() {
 
 @Composable
 fun RegisterContent() {
-
     Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
                 .padding(innerPadding)
+                .padding(horizontal = 20.dp)
                 .fillMaxSize()
         ) {
             Spacer(modifier = Modifier.height(50.dp))
             TextField(
+                modifier = Modifier.fillMaxWidth(),
                 value = "",
                 onValueChange = {},
                 label = {
@@ -75,6 +76,7 @@ fun RegisterContent() {
             )
             Spacer(modifier = Modifier.height(10.dp))
             TextField(
+                modifier = Modifier.fillMaxWidth(),
                 value = "",
                 onValueChange = {},
                 label = {
@@ -91,6 +93,7 @@ fun RegisterContent() {
             )
             Spacer(modifier = Modifier.height(10.dp))
             TextField(
+                modifier = Modifier.fillMaxWidth(),
                 value = "",
                 onValueChange = {},
                 label = {
@@ -108,7 +111,6 @@ fun RegisterContent() {
             Spacer(modifier = Modifier.height(10.dp))
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(5.dp)
             ) {
                 TextField(
                     value = "",
@@ -118,6 +120,7 @@ fun RegisterContent() {
                         Text("Nombre")
                     }
                 )
+                Spacer(modifier = Modifier.width(5.dp))
                 TextField(
                     value = "",
                     onValueChange = {},
@@ -129,6 +132,7 @@ fun RegisterContent() {
             }
             Spacer(modifier = Modifier.height(10.dp))
             TextField(
+                modifier = Modifier.fillMaxWidth(),
                 value = "",
                 onValueChange = {},
                 label = {
@@ -147,36 +151,41 @@ fun RegisterContent() {
             TextField(
                 value = "",
                 onValueChange = {},
-                modifier = Modifier.fillMaxHeight(),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(150.dp),
                 label = {
                     Text("Bio")
                 }, leadingIcon = {
-                    Icon(imageVector = Icons.Default.Email, contentDescription = "Email")
+                    Icon(imageVector = Icons.Default.TextFields, contentDescription = "Texto")
 
                 }
             )
-        }
-        Spacer(modifier = Modifier.height(24.dp))
-        Row(
-            horizontalArrangement = Arrangement.Center,
-            modifier = Modifier.fillMaxWidth()
-
-        ) {
-            // Boton 1
-            Button(onClick = {}) {
-                Spacer(modifier = Modifier.height(10.dp))
-                Text("Aceptar")
-            }
-
-            // Boton 2
-            Spacer(modifier = Modifier.width(5.dp))
-            Button(onClick = {}) {
-                Spacer(modifier = Modifier.height(15.dp))
-                Text("Cancelar")
+            Spacer(modifier = Modifier.height(24.dp))
+            Row(
+                horizontalArrangement = Arrangement.Center,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                // Boton 1 - aceptar
+                Button(
+                    onClick = {},
+                    modifier = Modifier.weight(0.5f)
+                ) {
+                    Text("Aceptar")
+                }
+                Spacer(modifier = Modifier.width(10.dp))
+                // Boton 2 - cancelar
+                Button(
+                    onClick = {},
+                    modifier = Modifier.weight(0.5f)
+                ) {
+                    Text("Cancelar")
+                }
             }
         }
     }
 }
+
 
 @Preview(showBackground = true)
 @Composable
