@@ -30,6 +30,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import org.ies.pmdm_exercise_components.ui.theme.PmdmexercisecomponentsTheme
@@ -48,6 +49,8 @@ class Login : ComponentActivity() {
 
 @Composable
 fun LoginContent() {
+    //var username =
+    //var password =
     Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
         Column(
             verticalArrangement = Arrangement.Center,
@@ -62,12 +65,11 @@ fun LoginContent() {
             )
             Spacer(modifier = Modifier.height(5.dp))
             TextField(
-                value = "",
-                onValueChange = {},
+                value = "",//username,
+                onValueChange = {}, //username = it
                 label = {
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
-                        // modifier = Modifier.
                     ) {
                         Icon(
                             imageVector = Icons.Default.Person,
@@ -80,11 +82,10 @@ fun LoginContent() {
             Spacer(modifier = Modifier.height(5.dp))
             TextField(
                 value = "",
-                onValueChange = {},
+                onValueChange = { },
                 label = {
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
-                        // modifier = Modifier.
                     ) {
                         Icon(
                             imageVector = Icons.Default.Lock,
