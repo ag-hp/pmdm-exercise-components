@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Lock
@@ -106,10 +107,10 @@ fun LoginContent() {
                 }
 
                 // Boton 2
-                Spacer(modifier = Modifier.height(10.dp))
+                Spacer(modifier = Modifier.width(5.dp))
                 Button(onClick = {}) {
                     Spacer(modifier = Modifier.height(15.dp))
-                    Text("Registarme")
+                    Text("Cancelar")
                 }
             }
             // Boton 3
@@ -121,7 +122,7 @@ fun LoginContent() {
             ) {
                 Button(onClick = {}) {
                     Spacer(modifier = Modifier.height(10.dp))
-                    Text("Cancelar")
+                    Text("Registarme")
                 }
             }
         }
