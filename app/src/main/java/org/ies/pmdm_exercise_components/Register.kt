@@ -156,9 +156,6 @@ fun RegisterContent() {
                     .height(150.dp),
                 label = {
                     Text("Bio")
-                }, leadingIcon = {
-                    Icon(imageVector = Icons.Default.TextFields, contentDescription = "Texto")
-
                 }
             )
             Spacer(modifier = Modifier.height(24.dp))
