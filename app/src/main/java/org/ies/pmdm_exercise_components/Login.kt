@@ -69,6 +69,24 @@ fun LoginContent() {
                             imageVector = Icons.Default.Person,
                             contentDescription = "Username"
                         )
+                        Text("Username")
+                    }
+                }
+            )
+            Spacer(modifier = Modifier.height(5.dp))
+            TextField(
+                value = "",
+                onValueChange = {},
+                label = {
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        // modifier = Modifier.
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Person,
+                            contentDescription = "Password"
+                        )
+                        Text("Password")
                     }
                 }
             )
